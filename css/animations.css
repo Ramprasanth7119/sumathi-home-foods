@@ -1,0 +1,68 @@
+/* =====================================================================
+   Motion. Everything here is disabled under prefers-reduced-motion.
+   ===================================================================== */
+
+/* scroll reveal (only hides content once JS is running) */
+.js-ready .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.8s var(--ease) var(--d, 0ms), transform 0.8s var(--ease) var(--d, 0ms); }
+.js-ready .reveal.is-visible { opacity: 1; transform: none; }
+
+/* hero intro */
+.hero .reveal { opacity: 0; transform: translateY(20px); animation: rise 0.9s var(--ease) var(--d, 0ms) forwards; }
+.hero-stage { animation: stage-in 1.4s var(--ease) 0.15s both; }
+.bowl { animation: bowl-in 1s var(--ease) both; }
+.bowl-center { animation-delay: 0.35s; }
+.bowl-a { animation-delay: 0.5s; } .bowl-b { animation-delay: 0.6s; } .bowl-c { animation-delay: 0.7s; } .bowl-d { animation-delay: 0.8s; }
+
+/* floating food: uses the independent `translate` property so it composes
+   with each element's translateZ depth */
+.float-a { animation: bowl-in 1s var(--ease) 0.5s both, float 6s ease-in-out 1.5s infinite; }
+.float-b { animation: bowl-in 1s var(--ease) 0.6s both, float 7s ease-in-out 1.6s infinite reverse; }
+.float-c { animation: bowl-in 1s var(--ease) 0.7s both, float 5.5s ease-in-out 1.7s infinite; }
+.bowl-d.float-b { animation-delay: 0.8s, 2s; }
+.crumb { animation: float 5s ease-in-out infinite; }
+.crumb.c2 { animation-duration: 6.5s; animation-direction: reverse; }
+.crumb.c4 { animation-duration: 7s; }
+.stage-label { animation: rise 0.8s var(--ease) 1.1s both, float 8s ease-in-out 2s infinite; }
+.label-b { animation-delay: 1.3s, 2.6s; }
+.hero-stage.is-paused * { animation-play-state: paused !important; }
+
+.ticker-track { animation: ticker 38s linear infinite; }
+.ticker:hover .ticker-track { animation-play-state: paused; }
+.scroll-cue span { animation: cue 1.8s ease-in-out infinite; }
+
+/* catalogue cards */
+.card-in { animation: card-in 0.6s var(--ease) var(--d, 0ms) both; }
+.cart-btn.bump { animation: bump 0.5s var(--ease); }
+
+/* dialogs */
+dialog[open].modal { animation: modal-in 0.35s var(--ease); }
+dialog[open].drawer { animation: drawer-in 0.4s var(--ease); }
+dialog[open]::backdrop { animation: fade-in 0.3s ease; }
+dialog.modal.is-closing { animation: modal-out 0.18s ease forwards; }
+dialog.drawer.is-closing { animation: drawer-out 0.18s ease forwards; }
+dialog.is-closing::backdrop { animation: fade-out 0.18s ease forwards; }
+
+@keyframes rise { to { opacity: 1; transform: none; } }
+@keyframes stage-in { from { opacity: 0; transform: translateY(30px) scale(0.94); } to { opacity: 1; transform: none; } }
+@keyframes bowl-in { from { opacity: 0; scale: 0.6; } to { opacity: 1; scale: 1; } }
+@keyframes float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -12px; } }
+@keyframes ticker { to { transform: translateX(-50%); } }
+@keyframes cue { 0% { opacity: 0; transform: translateY(0); } 40% { opacity: 1; } 100% { opacity: 0; transform: translateY(12px); } }
+@keyframes card-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes bump { 0%, 100% { transform: scale(1); } 35% { transform: scale(1.22); } 65% { transform: scale(0.94); } }
+@keyframes pop-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes modal-in { from { opacity: 0; transform: translateY(18px) scale(0.98); } to { opacity: 1; transform: none; } }
+@keyframes modal-out { to { opacity: 0; transform: translateY(10px) scale(0.98); } }
+@keyframes drawer-in { from { transform: translateX(100%); } to { transform: none; } }
+@keyframes drawer-out { to { transform: translateX(100%); } }
+@keyframes fade-in { from { opacity: 0; } }
+@keyframes fade-out { to { opacity: 0; } }
+@keyframes toast-in { from { opacity: 0; transform: translateY(-10px) scale(0.97); } }
+@keyframes toast-out { to { opacity: 0; transform: translateY(-8px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  html { scroll-behavior: auto; }
+  .js-ready .reveal, .hero .reveal { opacity: 1; transform: none; }
+  .ticker-track { animation: none; }
+}

@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Sumathi Home Foods — Homemade Traditional Snacks &amp; Sweets, Delivered Fresh</title>
+  <meta name="description" content="Freshly prepared traditional Indian snacks and sweets — murukku, laddu, mixture, adhirasam, gulab jamun and more — made at home and delivered to nearby areas. Order on WhatsApp. Bulk orders for functions and festivals." />
+  <meta name="theme-color" content="#702B25" />
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Open Graph (update URLs after launch — see js/config.js business.siteUrl) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sumathi Home Foods" />
+  <meta property="og:title" content="Sumathi Home Foods — Homemade with Love, Delivered with Care" />
+  <meta property="og:description" content="Traditional homemade snacks and sweets, freshly prepared and delivered to your doorstep." />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+  <meta property="og:locale" content="en_IN" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="preload" as="image" href="assets/images/hero-murukku-480.webp" type="image/webp" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <!-- Icon sprite (Lucide icon paths, ISC licence) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+      <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+      <symbol id="i-chef" viewBox="0 0 24 24"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+      <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C9 3 12 8 12 8s3-5 4.5-5a2.5 2.5 0 0 1 0 5"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
+      <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></symbol>
+      <symbol id="i-tag" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r="1.2"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9 10h.01M12 10h.01M15 10h.01"/></symbol>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-package" viewBox="0 0 24 24"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="m7.5 4.27 9 5.15"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Sumathi Home Foods — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M20 9c3 4.5 7.5 6 7.5 11.5a7.5 7.5 0 0 1-15 0C12.5 15 17 13.5 20 9Z" fill="currentColor" opacity=".9"/><circle cx="20" cy="21" r="2.6" fill="var(--cream)"/></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Sumathi</span>
+          <span class="brand-sub">Home Foods</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#foods">Our Foods</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#bulk">Bulk Orders</a></li>
+          <li><a href="#delivery">Delivery Areas</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#foods" class="btn btn-primary nav-mobile-cta">Order Now</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchOpen" type="button" aria-label="Search foods">
+          <svg class="i"><use href="#i-search"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" id="cartOpen" type="button" aria-label="Open cart, 0 items">
+          <svg class="i"><use href="#i-bag"/></svg>
+          <span class="cart-count" id="cartCount" aria-hidden="true">0</span>
+        </button>
+        <a href="#foods" class="btn btn-primary btn-sm nav-cta">Order Now</a>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+          <svg class="i i-open"><use href="#i-menu"/></svg>
+          <svg class="i i-close"><use href="#i-x"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="kolam kolam-a"></div>
+        <div class="kolam kolam-b"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="trust-pill reveal">
+            <span>Homemade</span><i aria-hidden="true"></i><span>Freshly Prepared</span><i aria-hidden="true"></i><span>Local Delivery</span>
+          </p>
+          <h1 id="heroTitle" class="hero-title reveal" style="--d:80ms">
+            Traditional Taste.<br />
+            <em>Homemade Love.</em>
+          </h1>
+          <p class="hero-lead reveal" style="--d:160ms">
+            Freshly prepared traditional Indian snacks and sweets, made with love in our home and delivered fresh to your doorstep.
+          </p>
+          <div class="hero-ctas reveal" style="--d:240ms">
+            <a href="#foods" class="btn btn-primary btn-lg">
+              Explore Our Foods <svg class="i"><use href="#i-arrow"/></svg>
+            </a>
+            <a href="#" class="btn btn-ghost btn-lg" data-wa="general">
+              <svg class="i"><use href="#i-chat"/></svg> Order on WhatsApp
+            </a>
+          </div>
+          <ul class="hero-menu reveal" style="--d:320ms" aria-label="Featured foods">
+            <li>Murukku</li><li>Laddu</li><li>Mixture</li><li>Adhirasam</li><li>Gulab Jamun</li>
+          </ul>
+        </div>
+
+        <!-- 3D thali: layered photos on a brass plate. Depth comes from CSS
+             preserve-3d + translateZ; pointer movement tilts the stage. -->
+        <div class="hero-stage" id="heroStage" aria-hidden="true">
+          <div class="stage-tilt" id="stageTilt">
+            <div class="plate-shadow"></div>
+            <div class="plate">
+              <div class="plate-rim"></div>
+              <div class="plate-leaf"></div>
+            </div>
+
+            <figure class="bowl bowl-center" style="--z:70px">
+              <picture>
+                <source srcset="assets/images/hero-murukku-480.webp" type="image/webp" />
+                <img src="assets/images/hero-murukku-480.jpg" alt="" width="480" height="480" fetchpriority="high" />
+              </picture>
+            </figure>
+            <figure class="bowl bowl-a float-a" style="--z:120px">
+              <picture><source srcset="assets/images/laddu-480.webp" type="image/webp" /><img src="assets/images/laddu-480.jpg" alt="" width="480" height="480" loading="eager" /></picture>
+            </figure>
+            <figure class="bowl bowl-b float-b" style="--z:150px">
+              <picture><source srcset="assets/images/gulab-jamun-480.webp" type="image/webp" /><img src="assets/images/gulab-jamun-480.jpg" alt="" width="480" height="480" loading="eager" /></picture>
+            </figure>
+            <figure class="bowl bowl-c float-c" style="--z:100px">
+              <picture><source srcset="assets/images/mixture-480.webp" type="image/webp" /><img src="assets/images/mixture-480.jpg" alt="" width="480" height="480" loading="eager" /></picture>
+            </figure>
+            <figure class="bowl bowl-d float-b" style="--z:130px">
+              <picture><source srcset="assets/images/adhirasam-480.webp" type="image/webp" /><img src="assets/images/adhirasam-480.jpg" alt="" width="480" height="480" loading="eager" /></picture>
+            </figure>
+
+            <span class="crumb c1" style="--z:180px"></span>
+            <span class="crumb c2" style="--z:200px"></span>
+            <span class="crumb c3" style="--z:160px"></span>
+            <span class="crumb c4" style="--z:220px"></span>
+            <span class="crumb c5" style="--z:140px"></span>
+
+            <div class="stage-label label-a" style="--z:190px"><b>Murukku</b><span>hand-pressed</span></div>
+            <div class="stage-label label-b" style="--z:210px"><b>Gulab Jamun</b><span>soft &amp; syrupy</span></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#specialities" class="scroll-cue" aria-label="Scroll to our specialities"><span></span></a>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Murukku</span><b>✦</b><span>முறுக்கு</span><b>✦</b><span>Laddu</span><b>✦</b><span>அதிரசம்</span><b>✦</b><span>Mixture</span><b>✦</b><span>Boondhi</span><b>✦</b><span>குலாப் ஜாமூன்</span><b>✦</b><span>Rava Laddu</span><b>✦</b>
+        <span>Murukku</span><b>✦</b><span>முறுக்கு</span><b>✦</b><span>Laddu</span><b>✦</b><span>அதிரசம்</span><b>✦</b><span>Mixture</span><b>✦</b><span>Boondhi</span><b>✦</b><span>குலாப் ஜாமூன்</span><b>✦</b><span>Rava Laddu</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- ============ SPECIALITIES ============ -->
+    <section class="section" id="specialities" aria-labelledby="specTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Our Specialities</p>
+          <h2 id="specTitle">From our kitchen to your table</h2>
+          <p class="section-lead">Four ways to enjoy what we make — everyday snacks, homemade sweets, festival favourites and orders for your big day.</p>
+        </header>
+        <div class="category-grid" id="categoryGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CATALOGUE ============ -->
+    <section class="section section-alt" id="foods" aria-labelledby="foodsTitle">
+      <div class="container">
+        <header class="section-head section-head-row reveal">
+          <div>
+            <p class="eyebrow">Our Foods</p>
+            <h2 id="foodsTitle">Made fresh, packed with care</h2>
+          </div>
+          <p class="section-lead">Choose your pack size, add to cart and send your order on WhatsApp. We confirm every order personally.</p>
+        </header>
+
+        <div class="catalog-toolbar" role="region" aria-label="Filter and sort products">
+          <div class="filter-chips" role="radiogroup" aria-label="Filter by category" id="filterChips">
+            <button type="button" class="chip" role="radio" aria-checked="true" data-filter="all">All</button>
+            <button type="button" class="chip" role="radio" aria-checked="false" data-filter="snacks">Snacks</button>
+            <button type="button" class="chip" role="radio" aria-checked="false" data-filter="sweets">Sweets</button>
+            <button type="button" class="chip" role="radio" aria-checked="false" data-filter="festival">Festival Specials</button>
+          </div>
+          <div class="toolbar-right">
+            <label class="search-field">
+              <span class="sr-only">Search foods</span>
+              <svg class="i"><use href="#i-search"/></svg>
+              <input type="search" id="catalogSearch" placeholder="Search murukku, laddu…" autocomplete="off" />
+            </label>
+            <label class="select-field">
+              <span class="sr-only">Sort products</span>
+              <select id="sortSelect">
+                <option value="popularity">Sort: Popularity</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+              </select>
+              <svg class="i"><use href="#i-chevron"/></svg>
+            </label>
+          </div>
+        </div>
+        <p class="results-info" id="resultsInfo" aria-live="polite"></p>
+
+        <div class="product-grid" id="productGrid"></div>
+
+        <div class="empty-state" id="emptyResults" hidden>
+          <svg class="i"><use href="#i-search"/></svg>
+          <h3>No foods match your search</h3>
+          <p>Try another name, or ask us on WhatsApp — we may be able to make it for you.</p>
+          <button type="button" class="btn btn-ghost" id="clearFilters">Show all foods</button>
+        </div>
+
+        <p class="fine-print">Prices shown are per pack. <span class="sample-flag">Sample prices — final price list to be confirmed.</span></p>
+      </div>
+    </section>
+
+    <!-- ============ DELIVERY ============ -->
+    <section class="section delivery" id="delivery" aria-labelledby="deliveryTitle">
+      <div class="container delivery-grid">
+        <div class="delivery-copy reveal">
+          <p class="eyebrow eyebrow-light">Local Delivery</p>
+          <h2 id="deliveryTitle">Fresh Homemade Goodness, Right at Your Doorstep.</h2>
+          <p class="section-lead">We deliver to nearby areas ourselves, so your food arrives fresh and handled with care. Check whether we reach you:</p>
+
+          <form class="pincode-form" id="pincodeForm" novalidate>
+            <label for="pincodeInput" class="sr-only">Your 6-digit pincode</label>
+            <div class="pincode-row">
+              <svg class="i"><use href="#i-pin"/></svg>
+              <input id="pincodeInput" name="pincode" inputmode="numeric" maxlength="6" placeholder="Enter your pincode" autocomplete="postal-code" aria-describedby="pincodeResult" />
+              <button type="submit" class="btn btn-gold">Check</button>
+            </div>
+            <div class="pincode-result" id="pincodeResult" role="status" aria-live="polite"></div>
+          </form>
+
+          <div class="delivery-rules" id="deliveryRules"></div>
+        </div>
+
+        <div class="zone-card reveal" style="--d:120ms">
+          <h3><svg class="i"><use href="#i-truck"/></svg> Where we deliver</h3>
+          <ul class="zone-list" id="zoneList"></ul>
+          <p class="zone-note"><svg class="i"><use href="#i-info"/></svg> Free delivery depends on your area and order value — it is not available everywhere. Not on the list? Message us; we'll tell you honestly if we can reach you.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BULK ORDERS ============ -->
+    <section class="section" id="bulk" aria-labelledby="bulkTitle">
+      <div class="container bulk-grid">
+        <div class="bulk-intro reveal">
+          <p class="eyebrow">Bulk &amp; Function Orders</p>
+          <h2 id="bulkTitle">Planning Something Special? Let Us Prepare It for You.</h2>
+          <p class="section-lead">From a few kilos of laddu for a house-warming to return-gift boxes for a wedding — tell us what you need and we'll plan the batch around your date.</p>
+          <ul class="occasion-list">
+            <li><svg class="i"><use href="#i-heart"/></svg>Weddings</li>
+            <li><svg class="i"><use href="#i-gift"/></svg>Birthday celebrations</li>
+            <li><svg class="i"><use href="#i-users"/></svg>Family functions</li>
+            <li><svg class="i"><use href="#i-flame"/></svg>Festivals</li>
+            <li><svg class="i"><use href="#i-package"/></svg>Corporate events</li>
+            <li><svg class="i"><use href="#i-star"/></svg>Religious functions</li>
+            <li><svg class="i"><use href="#i-gift"/></svg>Return gifts</li>
+          </ul>
+          <figure class="bulk-photo">
+            <picture>
+              <source srcset="assets/images/cat-bulk-480.webp 480w, assets/images/cat-bulk-960.webp 960w" sizes="(max-width: 900px) 92vw, 440px" type="image/webp" />
+              <img src="assets/images/cat-bulk-960.jpg" alt="Steel vessels filled with homemade laddus and snacks, ready for a function" width="960" height="720" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+        </div>
+
+        <form class="card form-card reveal" id="bulkForm" novalidate style="--d:120ms" aria-labelledby="bulkFormTitle">
+          <h3 id="bulkFormTitle">Bulk order enquiry</h3>
+          <p class="form-hint">We'll reply on WhatsApp with availability and a quote. Please enquire at least <strong data-config="bulk.leadDays">5</strong> days ahead.</p>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="bName">Your name <span aria-hidden="true">*</span></label>
+              <input id="bName" name="name" autocomplete="name" required />
+              <p class="field-error" id="bName-err"></p>
+            </div>
+            <div class="field">
+              <label for="bPhone">Phone number <span aria-hidden="true">*</span></label>
+              <input id="bPhone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile" required />
+              <p class="field-error" id="bPhone-err"></p>
+            </div>
+            <div class="field">
+              <label for="bEvent">Event type <span aria-hidden="true">*</span></label>
+              <div class="select-field select-block">
+                <select id="bEvent" name="event" required></select>
+                <svg class="i"><use href="#i-chevron"/></svg>
+              </div>
+              <p class="field-error" id="bEvent-err"></p>
+            </div>
+            <div class="field">
+              <label for="bDate">Delivery date <span aria-hidden="true">*</span></label>
+              <input id="bDate" name="date" type="date" required />
+              <p class="field-error" id="bDate-err"></p>
+            </div>
+            <fieldset class="field field-full">
+              <legend>Products required <span aria-hidden="true">*</span></legend>
+              <div class="check-grid" id="bProducts"></div>
+              <p class="field-error" id="bProducts-err"></p>
+            </fieldset>
+            <div class="field">
+              <label for="bQty">Estimated quantity <span aria-hidden="true">*</span></label>
+              <input id="bQty" name="quantity" placeholder="e.g. 5 kg laddu, 200 boxes" required />
+              <p class="field-error" id="bQty-err"></p>
+            </div>
+            <div class="field">
+              <label for="bLocation">Delivery location <span aria-hidden="true">*</span></label>
+              <input id="bLocation" name="location" placeholder="Area / venue, pincode" required />
+              <p class="field-error" id="bLocation-err"></p>
+            </div>
+            <div class="field field-full">
+              <label for="bNotes">Additional requirements</label>
+              <textarea id="bNotes" name="notes" rows="3" placeholder="Packing, return-gift boxes, less sweet, timing…"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-whatsapp btn-block btn-lg">
+            <svg class="i"><use href="#i-chat"/></svg> Send Enquiry on WhatsApp
+          </button>
+          <p class="form-foot">This opens WhatsApp with your enquiry filled in. Nothing is booked until we reply and confirm.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section-alt about" id="about" aria-labelledby="aboutTitle">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <figure class="about-photo about-photo-main">
+            <picture>
+              <source srcset="assets/images/about-main-480.webp 480w, assets/images/about-main-960.webp 960w" sizes="(max-width: 900px) 92vw, 520px" type="image/webp" />
+              <img src="assets/images/about-main-960.jpg" alt="Hand-rolled rava laddus, close up" width="960" height="1200" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <figure class="about-photo about-photo-inset">
+            <picture>
+              <source srcset="assets/images/boondhi-480.webp" type="image/webp" />
+              <img src="assets/images/boondhi-480.jpg" alt="Golden sweet boondhi in a bowl" width="480" height="480" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+        </div>
+        <div class="about-copy reveal" style="--d:120ms">
+          <p class="eyebrow">Our Story</p>
+          <h2 id="aboutTitle">A home kitchen, a family's recipes, and food made the slow way.</h2>
+          <!-- EDIT: replace with Sumathi's own story (how it started, the family recipes, what makes each item special). Avoid claims that aren't true. -->
+          <p>Sumathi Home Foods is exactly what the name says — food made at home. Every murukku is pressed, every laddu rolled and every batch of mixture seasoned in our own kitchen, using traditional recipes the way they have always been made in our family.</p>
+          <p>We cook in small batches so that what reaches you is fresh, not something that has been sitting on a shelf. Each order is prepared, packed and checked personally — because when it carries our name, it has to be good enough for our own table.</p>
+          <blockquote class="about-quote">
+            <p>“If I wouldn't serve it to my own family, it doesn't leave my kitchen.”</p>
+            <!-- EDIT: replace with a real quote from Sumathi, or remove this block. -->
+            <cite>— Sumathi <span class="sample-flag">(placeholder quote)</span></cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="section why" id="why" aria-labelledby="whyTitle">
+      <div class="container">
+        <header class="section-head center reveal">
+          <p class="eyebrow">Why Choose Us</p>
+          <h2 id="whyTitle">The difference is in the making</h2>
+        </header>
+        <ul class="why-grid">
+          <li class="why-card reveal"><span class="why-icon"><svg class="i"><use href="#i-heart"/></svg></span><h3>Made with Love</h3><p>Cooked the way we cook for our own family — with patience and care.</p></li>
+          <li class="why-card reveal" style="--d:80ms"><span class="why-icon"><svg class="i"><use href="#i-chef"/></svg></span><h3>Traditional Homemade Recipes</h3><p>Familiar, time-honoured recipes — the taste you remember from home.</p></li>
+          <li class="why-card reveal" style="--d:160ms"><span class="why-icon"><svg class="i"><use href="#i-flame"/></svg></span><h3>Freshly Prepared</h3><p>Small batches made close to your delivery date, never mass-produced.</p></li>
+          <li class="why-card reveal" style="--d:240ms"><span class="why-icon"><svg class="i"><use href="#i-leaf"/></svg></span><h3>Quality Ingredients</h3><p>We choose our ingredients carefully, because good food starts there.</p></li>
+          <li class="why-card reveal" style="--d:320ms"><span class="why-icon"><svg class="i"><use href="#i-truck"/></svg></span><h3>Convenient Local Delivery</h3><p>Delivered to nearby areas, with free delivery on qualifying orders.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS (SAMPLE PLACEHOLDERS) ============ -->
+    <section class="section section-alt" id="reviews" aria-labelledby="reviewsTitle">
+      <div class="container">
+        <header class="section-head center reveal">
+          <p class="eyebrow">Kind Words</p>
+          <h2 id="reviewsTitle">What customers say</h2>
+          <p class="sample-banner"><svg class="i"><use href="#i-info"/></svg> Sample layout — these are placeholder reviews, not real customer feedback. They will be replaced with genuine reviews.</p>
+        </header>
+        <div class="review-grid" id="reviewGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq" aria-labelledby="faqTitle">
+      <div class="container faq-grid">
+        <header class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faqTitle">Questions, answered</h2>
+          <p class="section-lead">Can't find what you're looking for? Message us on WhatsApp — a real person replies.</p>
+          <a href="#" class="btn btn-ghost" data-wa="general"><svg class="i"><use href="#i-chat"/></svg> Ask on WhatsApp</a>
+        </header>
+        <div class="faq-list" id="faqList"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-head">
+            <p class="eyebrow eyebrow-light">Contact</p>
+            <h2 id="contactTitle">Let's get you something delicious.</h2>
+            <p>Order, ask a question or plan a function — we're a message away.</p>
+            <div class="contact-ctas">
+              <a href="#" class="btn btn-gold btn-lg" data-wa="general"><svg class="i"><use href="#i-chat"/></svg> Chat on WhatsApp</a>
+              <a href="#" class="btn btn-outline-light btn-lg" id="callBtn"><svg class="i"><use href="#i-phone"/></svg> Call us</a>
+            </div>
+          </div>
+          <ul class="contact-list" id="contactList"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-name">Sumathi Home Foods</p>
+        <p class="footer-tag" data-config="business.tagline">Homemade with Love, Delivered with Care.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#foods">Our Foods</a></li>
+          <li><a href="#bulk">Bulk Orders</a></li>
+          <li><a href="#delivery">Delivery Areas</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-meta">
+        <ul class="footer-social" id="footerSocial"></ul>
+        <p class="footer-copy">© <span id="year"></span> Sumathi Home Foods. Orders are confirmed only after we reply.</p>
+        <p class="footer-credit"><a href="CREDITS.md">Photo credits</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="#" class="wa-float" data-wa="general" aria-label="Chat with us on WhatsApp">
+    <svg class="i"><use href="#i-chat"/></svg>
+    <span class="wa-float-label">Order on WhatsApp</span>
+  </a>
+
+  <!-- Mobile bottom cart bar (appears when cart has items) -->
+  <button type="button" class="mobile-cart-bar" id="mobileCartBar" hidden>
+    <span class="mcb-count" id="mcbCount">0 items</span>
+    <span class="mcb-total" id="mcbTotal">₹0</span>
+    <span class="mcb-cta">View cart <svg class="i"><use href="#i-arrow"/></svg></span>
+  </button>
+
+  <!-- ============ DIALOGS ============ -->
+  <dialog class="modal product-modal" id="productDialog" aria-labelledby="pdTitle">
+    <div class="modal-body" id="productDialogBody"></div>
+  </dialog>
+
+  <dialog class="drawer" id="cartDrawer" aria-labelledby="cartTitle">
+    <div class="drawer-inner">
+      <header class="drawer-head">
+        <h2 id="cartTitle">Your cart</h2>
+        <button type="button" class="icon-btn" data-close aria-label="Close cart"><svg class="i"><use href="#i-x"/></svg></button>
+      </header>
+      <div class="drawer-content" id="cartContent"></div>
+      <footer class="drawer-foot" id="cartFoot"></footer>
+    </div>
+  </dialog>
+
+  <dialog class="modal checkout-modal" id="checkoutDialog" aria-labelledby="coTitle">
+    <div class="modal-body" id="checkoutBody"></div>
+  </dialog>
+
+  <dialog class="modal search-modal" id="searchDialog" aria-label="Search foods">
+    <div class="search-box">
+      <label class="search-field search-field-lg">
+        <span class="sr-only">Search foods</span>
+        <svg class="i"><use href="#i-search"/></svg>
+        <input type="search" id="globalSearch" placeholder="Search snacks and sweets…" autocomplete="off" />
+      </label>
+      <button type="button" class="icon-btn" data-close aria-label="Close search"><svg class="i"><use href="#i-x"/></svg></button>
+    </div>
+    <ul class="search-results" id="searchResults" role="listbox" aria-label="Search results"></ul>
+  </dialog>
+
+  <div class="toast-region" id="toastRegion" popover="manual" role="status" aria-live="polite" aria-atomic="false"></div>
+
+  <noscript><p class="noscript">Please enable JavaScript to browse products and order. You can also call or WhatsApp us directly.</p></noscript>
+
+  <!-- Scripts: plain files, loaded in dependency order (no build step) -->
+  <script src="js/config.js" defer></script>
+  <script src="js/products.js" defer></script>
+  <script src="js/utils.js" defer></script>
+  <script src="js/delivery.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/checkout.js" defer></script>
+  <script src="js/bulk-orders.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
